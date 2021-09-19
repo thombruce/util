@@ -1,0 +1,14 @@
+{
+  "name": "util-monorepo",
+  "version": "0.0.0",
+  "author": "Thom Bruce <thom@thombruce.com>",
+  "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "packages/*",
+    "docs"
+  ],
+  "devDependencies": {
+    "lerna": "^4.0.0"
+  }
+}
