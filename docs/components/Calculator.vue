@@ -111,7 +111,6 @@ export default {
     equals () {
       if (!this.newEntry) this.appendOperation()
       this.currentExpression = ''
-      this.newEntry = true
     }
   }
 }
