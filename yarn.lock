@@ -2325,7 +2325,7 @@
 
 "@thombruce/fizzbuzz@https://github.com/thombruce/fizzbuzz":
   version "0.1.0"
-  resolved "https://github.com/thombruce/fizzbuzz#a6cd86edd9648fb9f45fa2d4a45abdeb0b6c1db4"
+  resolved "https://github.com/thombruce/fizzbuzz#8d15d9e923f170a6eef21b4082f56a8c142c0b2a"
   dependencies:
     yargs "^17.1.1"
 
