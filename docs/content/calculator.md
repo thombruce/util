@@ -7,3 +7,5 @@ This calculator is still a work in progress. It mostly works, but there are defi
 The UI was modeled after the iOS Calculator app. That app has a percentage function, which here is currently disabled...
 
 Yeah, percentages... tougher than you'd think... sort of. I expect the existing logic needs to be refactored for the way in which I expect percentages to work. It could definitely use the refactor too.
+
+Note also, the calculator currently does not support carrying a value forwards after hitting the equals button. Anything entered after will be treated as a brand new calculation.
