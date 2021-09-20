@@ -7,8 +7,8 @@ div
           .card-body.text-right.text-4xl.font-mono
             | {{ displayValue }}
         .grid.grid-cols-4.gap-4
-          button.btn(v-if="isAllClear" @click='allClear()') AC
-          button.btn(v-else @click='clear()') C
+          button.btn.btn-error(v-if="isAllClear" @click='allClear()') AC
+          button.btn.btn-warning(v-else @click='clear()') C
           button.btn(@click='negate()') +/-
           button.btn(disabled='disabled') %
           button.btn(@click='divide()' :class="currentOperation == '/' ? 'btn-accent' : ''") ÷
@@ -26,7 +26,7 @@ div
           button.btn(@click='plus()' :class="currentOperation == '+' ? 'btn-accent' : ''") +
           button.btn.col-span-2(@click="addNumeral('0')") 0
           button.btn(@click="addDecimal()") .
-          button.btn(@click="equals()") =
+          button.btn.btn-primary(@click="equals()") =
 </template>
 
 <script>
