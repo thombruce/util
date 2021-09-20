@@ -10,7 +10,7 @@ div
           button.btn.btn-error(v-if="isAllClear" @click='allClear()') AC
           button.btn.btn-warning(v-else @click='clear()') C
           button.btn(@click='negate()') +/-
-          button.btn(disabled='disabled') %
+          button.btn(@click='percent()') %
           button.btn(@click='divide()' :class="currentOperation == '/' ? 'btn-accent' : ''") ÷
           button.btn(@click="addNumeral('7')") 7
           button.btn(@click="addNumeral('8')") 8
@@ -107,6 +107,13 @@ export default {
       if (!this.newEntry) this.appendOperation()
       this.currentOperation = '/'
       this.newEntry = true
+    },
+    percent () {
+      if (this.currentOperation == '*' || this.currentOperation == '/' || this.currentOperation == '') {
+        this.displayValue = eval(this.displayValue + '/ 100')
+      } else {
+        this.displayValue = eval(`(${this.currentExpression}) / 100 * ${this.displayValue}`)
+      }
     },
     equals () {
       if (!this.newEntry) this.appendOperation()
