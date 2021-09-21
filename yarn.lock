@@ -2324,8 +2324,8 @@
     mini-svg-data-uri "^1.2.3"
 
 "@thombruce/calculator@https://github.com/thombruce/calculator":
-  version "0.1.0"
-  resolved "https://github.com/thombruce/calculator#0de977a5711352c1b8f55a35466c2bf33a291df4"
+  version "0.3.0"
+  resolved "https://github.com/thombruce/calculator#3b3381019ccf896ae5ff8b06941b841fcaae2853"
   dependencies:
     "@thombruce/tnt" "^0.1.5"
     core-js "^3.6.5"
